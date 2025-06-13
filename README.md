@@ -6,7 +6,7 @@
 -  Responsif dan mudah digunakan di berbagai perangkat (mobile & desktop).
 - Hasil klasifikasi ditampilkan secara instan.
 
-## 🚀 Cara Menjalankan (Local)
+## Cara Menjalankan (Local)
 
 ### 1. Clone repositori ini
 ```bash
@@ -19,3 +19,6 @@ venv/Scripts/activate
 
 python app.py
 ```
+
+## Deploy 
+[AmorCare](https://amorcare.netlify.app/)
