@@ -6,13 +6,19 @@
 -  Responsif dan mudah digunakan di berbagai perangkat (mobile & desktop).
 - Hasil klasifikasi ditampilkan secara instan.
 
+## Cara Menjalankan
 
-## Clone repositori ini
+### Requirements
+- flask
+- tensorflow
+- pillow
+
+### Clone repositori ini
 ```bash
 git clone https://github.com/AmorCare/LAI25-SM007-AmorCare-Web.git
 cd LAI25-SM007-AmorCare-Web
 ```
-## Set up environment
+### Set up environment
 ```bash
 venv/Scripts/activate
 
