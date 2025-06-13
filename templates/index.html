@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AmorCare</title>
+    <link rel="icon" href="static/img/Footer Logo.png" type="image/x-icon">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/footers/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body>
+    <!-- Section Navigation/Header-->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom position-relative" style="font-family: 'Google Sans', Arial, sans-serif;">
+        <div class="container-fluid px-2">
+            <!-- Logo at far left -->
+            <a class="navbar-brand ms-4" href="#" spellcheck="false">
+                <img src="static/img/fix-logo-1.png" alt="Amorcare logo" style="height:32px; width:auto; display:block;">
+            </a>
+            <!-- Navbar Toggler at far right (for mobile) -->
+            <button class="navbar-toggler ms-auto me-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Offcanvas Sidebar (for mobile) -->
+            <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skincheck" data-bs-dismiss="offcanvas">Skin Check</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skinpicks" data-bs-dismiss="offcanvas">Skin Picks</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whatpeoplesay" data-bs-dismiss="offcanvas">What People Say</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutus" data-bs-dismiss="offcanvas">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Navbar menu (desktop, centered) -->
+            <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skincheck">Skin Check</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skinpicks">Skin Picks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whatpeoplesay">What People Say</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Hero-->
+    <section>
+        <div class="container col-xxl-8 px-4">
+            <div class="row flex-lg-row-reverse align-items-center g-4 py-3">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="static/img/Hero Image.png" class="d-block mx-lg-auto img-fluid" alt="Hero Content" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        Kenali Jenis Kulitmu<br>Dalam Sekejap
+                    </h1>
+                    <p class="lead mb-3">
+                        Upload foto wajahmu, AmorCare tebak jenis kulitmu, lalu dapat rekomendasi produk lokal &amp; bahan alami
+                        yang cocok buat kamu. AmorCare yang kerja, kamu tinggal duduk manis!
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-skincheck-custom btn-lg px-4 me-md-2" onclick="document.getElementById('skincheck').scrollIntoView({behavior:'smooth'});">
+                            Cek Jenis Kulitmu
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Features-->
+    <section class="features py-5 bg-white">
+        <div class="container">
+            <h2 class="mb-4 text-center">Ini yang Kamu Butuhkan</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="static/img/skincheck-img.png" alt="Skin Check" class="mb-3" style="height:200px;">
+                            <h5 class="card-title">Skin Check</h5>
+                            <p class="card-text">Unggah selfie kamu, biar AI kami bantu kenalin jenis kulitmu. Cepat dan tanpa ribet!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="static/img/skinpicks-img.png" alt="Skin Picks" class="mb-3" style="height: 200px;">
+                            <h5 class="card-title">Skin Picks</h5>
+                            <p class="card-text">Artikel rekomendasi produk dan bahan alami untuk setiap jenis kulit, dan jadwal skincare!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0">
+                        <div class="card-body">
+                            <img src="static/img/whatpplsay-img.png" alt="What People Say" class="mb-3" style="height:200px;">
+                            <h5 class="card-title">What People Say</h5>
+                            <p class="card-text">Intip pengalaman orang lain setelah pakai rekomendasi kami. Siapa tahu kamu relate!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skin Check-->
+    <section id="skincheck" class="py-5" style="background-color: #FFF4C0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Skin Check</h2>
+                <p class="text-muted">Kepoin jenis kulitmu di sini!</p>
+            </div>
+            <div class="row justify-content-center g-2 flex-column align-items-center">
+                <!-- What you'll get -->
+                <div class="col-auto d-flex flex-column align-items-center mb-2" style="width:100%; max-width:500px;">
+                    <div class="card shadow-sm w-100" style="background: #fff;">
+                        <div class="card-body px-4 py-4">
+                            <h5 class="fw-semibold mb-4 text-center">Apa yang akan kamu dapatkan?</h5>
+                            <ul class="list-unstyled mb-0 text-start mx-auto">
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">1</span>
+                                    Analisis jenis kulit
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">2</span>
+                                    Rekomendasi produk lokal dan bahan alami
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">3</span>
+                                    Jadwal pemakaian skincare
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- How to -->
+                <div class="col-auto d-flex flex-column align-items-center mb-2" style="width:100%; max-width:500px;">
+                    <div class="card shadow-sm w-100" style="background: #fff;">
+                        <div class="card-body px-4 py-4">
+                            <h5 class="fw-semibold mb-4 text-center">Gimana caranya?</h5>
+                            <ul class="list-unstyled mb-0 text-start mx-auto">
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">1</span>
+                                    Hapus makeup dan lepas topi/kacamata
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">2</span>
+                                    Rambut/hijab tidak menutupi area wajah
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">3</span>
+                                    Cari tempat dengan cahaya yang terang
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">4</span>
+                                    Dekatkan wajah pada kamera
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="me-2 d-inline-flex justify-content-center align-items-center rounded-circle text-white fw-bold"
+                                        style="background:#ff8f8f;width:28px; height:28px; font-size:1rem;">5</span>
+                                    Unggah hasil selfiemu
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Upload Image Card -->
+                <div class="card mx-auto shadow-sm" style="max-width: 500px; background: #fff;">
+                    <form id="skinCheckForm">
+                        <div class="d-flex flex-column align-items-center p-3">
+                            <img src="static/img/Upload to the Cloud.png" alt="Upload to the Cloud" style="height: 80px;" class="mb-2">
+                            <div class="text-center">
+                                <div class="fw-semibold">Unggah Gambar</div>
+                                <p class="mb-0 small text-muted">
+                                    Ukuran gambar harus kurang dari <strong>2MB</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-3 pt-0">
+                            <input method="post" type="file" class="form-control mb-2" accept="image/*" id="skinImageInput" name="skinImage" required aria-label="Unggah gambar wajah Anda">
+                            <div id="imagePreview" style="display: flex; justify-content: center; align-items: center;"></div>
+                            <!-- Upload & Modal -->
+                            <div class="mt-2">
+                                <div class="mx-auto" style="max-width: 440px;">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="agreeTerms" aria-label="Setujui Kebijakan Privasi dan Ketentuan Penggunaan">
+                                        <label class="form-check-label small text-muted" for="agreeTerms">
+                                            Dengan menggunakan fitur ini, kamu setuju pada <strong>Kebijakan Privasi</strong> dan <strong>Ketentuan Penggunaan</strong>.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-skincheck-custom w-100 mb-2 mt-2" id="uploadBtn" aria-label="Unggah gambar untuk analisis">
+                                <span id="uploadBtnText">Coba Sekarang</span>
+                                <span id="uploadLoading" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal Kenalan Dulu -->
+                <div class="modal fade" id="kenalanModal" tabindex="-1" aria-labelledby="kenalanModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0" style="border-radius: 16px;">
+                            <div class="modal-header border-0 pb-3" style="background:#ff8f8f; border-top-left-radius:16px; border-top-right-radius:16px;">
+                                <h4 class="modal-title w-100 text-center fw-bold" id="kenalanModalLabel" style="color:#fff; margin-bottom:0;">
+                                    Kenalan dulu, yuk!
+                                    <span class="ms-1" title="Informasi ini membantu sistem memberikan rekomendasi yang lebih sesuai." style="cursor:help;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#fff4c0"/><text x="8" y="12" text-anchor="middle" font-size="10" fill="#ff8f8f" font-family="Arial" dy="0">?</text></svg>
+                                    </span>
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position:absolute;right:1.5rem;top:1.5rem;"></button>
+                            </div>
+                            <div class="modal-body p-4">
+                                <!-- Jenis Kelamin -->
+                                <div class="mb-4">
+                                    <div class="fw-semibold mb-2 text-center">Apa jenis kelaminmu?</div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="w-100 mb-2" style="max-width:300px;">
+                                            <div class="input-group">
+                                                <button type="button" class="btn btn-outline-secondary gender-btn w-50" data-gender="male" name="gender"
+                                                    style="border-radius: 8px 0 0 8px; border-width:1px; border-color:#d6d6d6;">
+                                                    Laki-laki
+                                                </button>
+                                                <button type="button" class="btn btn-outline-secondary gender-btn w-50" data-gender="female" name="gender"
+                                                    style="border-radius: 0 8px 8px 0; border-width:1px; border-color:#d6d6d6;">
+                                                    Perempuan
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-3" style="border-top:3px solid #d6d6d6;">
+                                <!-- Usia -->
+                                <div class="mb-4 mt-4">
+                                    <div class="fw-semibold mb-2 text-center">Berapa Usiamu?</div>
+                                    <input type="number" min="13" class="form-control mx-auto" id="userAgeInput" name="userAge" placeholder="Masukkan usia (min. 13 tahun)" style="max-width:300px;">
+                                    <div class="small text-danger mb-4 mt-2 d-none text-center" id="ageError">Usia minimal 13 tahun.</div>
+                                </div>
+                                <hr class="my-3" style="border-top:3px solid #d6d6d6;">
+                                <!-- Kondisi Kulit -->
+                                <div>
+                                    <div class="fw-semibold mb-4 mt-4 text-center">Apa yang kulitmu rasakan akhir-akhir ini?</div>
+                                    <div class="row g-2">
+                                        <div class="col-6">
+                                            <div class="skin-cond-card h-100 text-center border-0 shadow-lg" data-cond="normal"
+                                                style="cursor:pointer; padding:12px; border:2px solid #d6d6d6; box-shadow: 0 6px 32px 0 rgba(255,143,143,0.18), 0 2px 8px 0 rgba(80,141,105,0.08); border-radius:16px;">
+                                                <img src="static/img/skin-normal.png" alt="Kulit Normal" style="height:48px;" class="mb-1">
+                                                <div class="fw-semibold mb-3">Kulit Normal</div>
+                                                <div class="small text-muted" style="font-size:0.85em;">
+                                                    Warna kulit merata, jarang bermasalah, tidak terlalu berminyak atau kering. Pori-pori kecil dan tekstur kulit halus.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="skin-cond-card h-100 text-center border-0 shadow-lg" data-cond="dry"
+                                                style="cursor:pointer; padding:12px; border:2px solid #d6d6d6; box-shadow: 0 6px 32px 0 rgba(255,143,143,0.18), 0 2px 8px 0 rgba(80,141,105,0.08); border-radius:16px;">
+                                                <img src="static/img/skin-dry.png" alt="Kulit Kering" style="height:48px;" class="mb-1">
+                                                <div class="fw-semibold mb-3">Kulit Kering</div>
+                                                <div class="small text-muted" style="font-size:0.85em;">
+                                                    Terlihat kusam, bersisik halus, dan terasa kaku setelah cuci muka. Sering muncul di pipi dan area sekitar mulut.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="skin-cond-card h-100 text-center border-0 shadow-lg" data-cond="oily"
+                                                style="cursor:pointer; padding:12px; border:2px solid #d6d6d6; box-shadow: 0 6px 32px 0 rgba(255,143,143,0.18), 0 2px 8px 0 rgba(80,141,105,0.08); border-radius:16px;">
+                                                <img src="static/img/skin-oily.png" alt="Kulit Berminyak" style="height:48px;" class="mb-1">
+                                                <div class="fw-semibold mb-3">Kulit Berminyak</div>
+                                                <div class="small text-muted" style="font-size:0.85em;">
+                                                    Berminyak terutama di area T-zone (dahi, hidung, dagu), pori-pori tampak besar, dan sering muncul kilap.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="skin-cond-card h-100 text-center border-0 shadow-lg" data-cond="acne"
+                                                style="cursor:pointer; padding:12px; border:2px solid #ffe0e0; box-shadow: 0 6px 32px 0 rgba(255,143,143,0.18), 0 2px 8px 0 rgba(80,141,105,0.08); border-radius:16px;">
+                                                <img src="static/img/skin-acne.png" alt="Kulit Berjerawat" style="height:48px;" class="mb-1">
+                                                <div class="fw-semibold mb-3">Kulit Berjerawat</div>
+                                                <div class="small text-muted" style="font-size:0.85em;">
+                                                    Muncul komedo, jerawat merah, atau benjolan kecil di pipi, dahi, atau dagu. Sering disertai kulit berminyak dan pori besar.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button id="kenalanSubmitBtn" type="button" class="btn btn-skincheck-custom w-100 d-flex align-items-center justify-content-center">
+                                            <span id="kenalanSubmitText">Submit dan Lanjutkan</span>
+                                            <span id="kenalanLoading" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Hasil Skin Check -->
+                <div class="modal fade" id="skinCheckResultModal" tabindex="-1" aria-labelledby="skinCheckResultModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                    <div class="modal-dialog modal-fullscreen">
+                        <div class="modal-content" style="background:#FFF4C0; border-radius:0;">
+                            <div class="modal-header border-0" style="background:#ff8f8f; border-top-left-radius:0; border-top-right-radius:0;">
+                                <div class="w-100 text-center">
+                                    <h2 class="fw-bold mb-0" style="font-size:2rem; color:#ffffff;">Hasil Skin Check</h2>
+                                    <div class="fw-medium" style="color:#fafafa; font-size:1rem;">
+                                        Ini yang kamu tunggu-tunggu!
+                                        <span class="ms-1" title="Informasi ini membantu sistem memberikan rekomendasi yang lebih sesuai." style="cursor:help;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ff8f8f" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#fff4c0"/><text x="8" y="12" text-anchor="middle" font-size="10" fill="#ff8f8f" font-family="Arial" dy="0">?</text></svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- Custom Close Button: gentle bouncy transition before refresh -->
+                                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close" id="skinCheckResultCloseBtn"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="d-flex flex-column align-items-center w-100" style="min-height:100vh;">
+                                    <div class="container-fluid d-flex flex-column align-items-center justify-content-center" style="max-width:1440px; padding-top:40px; padding-bottom:40px;">
+                                        <div class="text-center mb-4" style="width:100%;"></div>
+                                        <div class="mb-4" style="width:100%; max-width:480px;">
+                                            <div class="d-flex flex-column align-items-center" id="skinResultImageWrap">
+                                                <img id="skinResultImage" src="static/img/skin-normal.png" alt="Kulit Normal" style="height:64px;">
+                                                <div id="skinResultLabel" class="fw-semibold mt-2" style="font-size:1.1rem;">Kulit Normal</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center text-start small mb-4" style="color:#726C6E; gap:8px;">
+                                            <img src="static/img/disclaimer.png" alt="Disclaimer" style="height:20px; width:auto;" class="me-2">
+                                            <span>Saran tidak bersifat mutlak, sesuaikan dengan kondisi kulit.</span>
+                                        </div>
+                                        <div class="mb-2" style="width:100%; max-width:480px; padding-bottom:32px;">
+                                            <div class="rounded-3 p-3 mb-2 d-flex align-items-center justify-content-between shadow-lg" style="background:#FFFFFF;">
+                                                <div class="fw-semibold" id="skinResultTitle" style="font-size:1.25rem;">Kulit Normal</div>
+                                                <button class="btn btn-link p-0" id="toggleSkinDetail" aria-label="Lihat detail" style="color:#0A080D;"></button>
+                                                    <svg id="chevronIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5" stroke="#0A080D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                </button>
+                                            </div>
+                                            <div id="skinResultDetail" class="collapse shadow-lg">
+                                                <div class="bg-white rounded-3 p-3 mb-2">
+                                                    <div id="skinResultDescTips" style="font-size:1rem;">
+                                                        <!-- Desc + Tips will be injected here -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 w-100" style="max-width:900px; padding-bottom:32px; padding-top:24px;">
+                                            <div class="text-center">
+                                                <h3 class="fw-bold" style="font-size:1.25rem;">Skincare Products & Herbs Recommendation</h3>
+                                                <div class="fw-medium" style="color:#726C6E; font-size:0.75rem; padding-bottom:32px;">
+                                                    Rekomendasi produk lokal dan bahan alami yang sesuai dengan jenis kulitmu
+                                                </div>
+                                            </div>
+                                            <div class="overflow-auto pb-2 mb-8" style="max-width:100vw;">
+                                                <div class="d-flex flex-row gap-4" id="skinProductRecs" style="min-width:2100px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4 w-100" style="max-width:600px; padding-bottom:24px; padding-top:24px;">
+                                            <div class="rounded-3 p-4 text-center" style="background:#ffffff;">
+                                                <div class="mb-2">
+                                                    <svg width="100" height="100" fill="none" viewBox="0 0 24 24">
+                                                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10z" stroke="#508D69" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                                <div class="fw-bold mb-2" style="color:#000000; font-size:1.2rem;">Feedback awalmu penting buat kami</div>
+                                                <div class="mb-3" style="color:#000000; font-size:1rem;"></div>
+                                                    Yuk, bagi kesan awalmu supaya kami bisa terus membaik!
+                                                </div>
+                                                <textarea class="form-control mb-2" id="feedbackInput" rows="3" placeholder="Kirim masukan kamu (maks. 200 karakter)" required></textarea>
+                                                <div class="invalid-feedback mb-2" id="feedbackError" style="display:none;">
+                                                    Masukan tidak boleh kosong dan maksimal 200 karakter.
+                                                </div>
+                                                <button class="btn btn-skincheck-custom w-100 d-flex align-items-center justify-content-center" id="sendFeedbackBtn" type="button">
+                                                    <span id="sendFeedbackText">Kirim</span>
+                                                    <span id="sendFeedbackLoading" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                                </button>
+
+                                                <!-- Modal Feedback Terkirim -->
+                                                <div class="modal fade" style="border-radius:12px;" id="feedbackThanksModal" tabindex="-1" aria-labelledby="feedbackThanksModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                                                    <div class="modal-dialog modal-dialog-centered" style="max-width:350px; border-radius: 12px;">
+                                                        <div class="modal-content border-0" style="border-radius: 12px;">
+                                                            <div class="modal-header border-0 pb-3" style="background:#ff8f8f; border-top-left-radius:12px; border-top-right-radius:12px;">
+                                                                <h4 class="modal-title w-100 text-center fw-bold" id="feedbackThanksModalLabel" style="color:#fff; margin-bottom:0;">
+                                                                    Feedback Diterima!
+                                                                </h4>
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="position:absolute;right:1.5rem;top:1.5rem;"></button>
+                                                            </div>
+                                                            <div class="modal-body mb-4 mt-4 p-4 text-center" style="border-bottom-left-radius:12px; border-bottom-right-radius:12px;">
+                                                                <div class="fw-semibold mb-2" style="font-size:1.1rem;">
+                                                                    Terima kasih atas masukanmu!</div>
+                                                                <div class="text-muted" style="font-size:1rem;">
+                                                                    Feedback kamu sudah kami terima dan sangat berarti untuk pengembangan AmorCare.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Loading overlay for Kenalan Modal -->
+                <div id="kenalanLoadingOverlay" style="display:none;position:fixed;z-index:2000;top:0;left:0;width:100vw;height:100vh;background:rgba(255,255,255,0.8);align-items:center;justify-content:center;">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="spinner-border" style="width:3rem;height:3rem;color:#ff8f8f;" role="status"></div>
+                        <div class="fw-semibold mt-3" style="color:#ff8f8f;font-size:1.2rem;">Mendeteksi jenis kulitmu...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Skin Picks-->
+    <section id="skinpicks" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Skin Picks</h2>
+                <p class="text-muted">
+                    Kenali kulitmu lewat artikel pilihan!
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0 shadow"
+                        style="width: 320px; height: auto; background: #FAFAFA; border-radius: 16px;">
+                        <img src="static/img/skin-picks-card-1-image.png" class="card-img-top" alt="Kompasiana Article"
+                            style="border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="card-body d-flex flex-column w-100" style="flex:1;">
+                            <h5 class="card-title fw-semibold" style="min-height: 48px;">
+                                Kenali Skin Barrier Rusak &amp; Cara Memperbaikinya dengan Basic Skincare
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Kompasiana - Pelajari tanda skin barrier rusak dan cara memperbaikinya dengan skincare dasar.
+                            </p>
+                            <a href="https://www.kompasiana.com/enysuyantidewifortuna5728/682c639bc925c434f120a686/kenali-skin-barrier-rusak-cara-memperbaikinya-dengan-basic-skincare"
+                                target="_blank" rel="noopener noreferrer"
+                                class="btn d-flex align-items-center justify-content-center gap-2 mt-auto"
+                                style="background:#ff8f8f; color:#fff; border:none;">
+                                Baca selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    style="color:#fff;" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.75.75 0 0 1 .75-.75h10.19l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H1.75A.75.75 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0 shadow"
+                        style="width: 320px; height: auto; background: #FAFAFA; border-radius: 16px;">
+                        <img src="static/img/skin-picks-card-2-image.png" class="card-img-top" alt="Alodokter Article"
+                            style="border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="card-body d-flex flex-column w-100" style="flex:1;">
+                            <h5 class="card-title fw-semibold" style="min-height: 48px;">
+                                Inilah 6 Urutan Memakai Skincare yang Benar
+                            </h6>
+                            <p class="card-text small text-muted mb-3">
+                                Alodokter - Panduan langkah skincare yang tepat agar hasil maksimal untuk kulitmu.
+                            </p>
+                            <a href="https://www.alodokter.com/inilah-6-urutan-memakai-skincare-yang-benar"
+                                target="_blank" rel="noopener noreferrer"
+                                class="btn d-flex align-items-center justify-content-center gap-2 mt-auto"
+                                style="background:#ff8f8f; color:#fff; border:none;">
+                                Baca selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    style="color:#fff;" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.75.75 0 0 1 .75-.75h10.19l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H1.75A.75.75 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0 shadow"
+                        style="width: 320px; height: auto; background: #FAFAFA; border-radius: 16px;">
+                        <img src="static/img/skin-picks-card-3-image.png" class="card-img-top" alt="Kompasiana Article"
+                            style="border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="card-body d-flex flex-column w-100" style="flex:1;">
+                            <h5 class="card-title fw-semibold" style="min-height: 48px;">
+                                Pria Modern, Perlukah Klinik Kegantengan seperti Klinik Kecantikan?
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Kompasiana - Bahas pentingnya perawatan kulit untuk pria modern dan tren klinik kegantengan.
+                            </p>
+                            <a href="https://www.kompasiana.com/abdulwahid8304/67956070c925c404a51b4d3a/pria-modern-perlukah-klinik-kegantengan-seperti-klinik-kecantikan"
+                                target="_blank" rel="noopener noreferrer"
+                                class="btn d-flex align-items-center justify-content-center gap-2 mt-auto"
+                                style="background:#ff8f8f; color:#fff; border:none;">
+                                Baca selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    style="color:#fff;" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.75.75 0 0 1 .75-.75h10.19l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H1.75A.75.75 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card border-0 shadow"
+                        style="width: 320px; height: auto; background: #FAFAFA; border-radius: 16px;">
+                        <img src="static/img/skin-picks-card-4-image.png" class="card-img-top" alt="Halodoc Article"
+                            style="border-top-left-radius: 16px; border-top-right-radius: 16px;">
+                        <div class="card-body d-flex flex-column w-100" style="flex:1;">
+                            <h5 class="card-title fw-semibold" style="min-height: 48px;">
+                                Ini Skincare Alami dan Aman yang Bisa Dicoba di Rumah
+                            </h5>
+                            <p class="card-text small text-muted mb-3">
+                                Halodoc - Rekomendasi skincare alami yang mudah dan aman untuk perawatan di rumah.
+                            </p>
+                            <a href="https://www.halodoc.com/artikel/ini-skincare-alami-dan-aman-yang-bisa-dicoba-di-rumah?srsltid=AfmBOoqFyuv8u72KXUYXb-tYvSfz7tSikbQkB8wY1SIfoIHLuHZIpytV"
+                                target="_blank" rel="noopener noreferrer"
+                                class="btn d-flex align-items-center justify-content-center gap-2 mt-auto"
+                                style="background:#ff8f8f; color:#fff; border:none;">
+                                Baca selengkapnya
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                    style="color:#fff;" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1 8a.75.75 0 0 1 .75-.75h10.19l-3.22-3.22a.75.75 0 1 1 1.06-1.06l4.5 4.5a.75.75 0 0 1 0 1.06l-4.5 4.5a.75.75 0 0 1-1.06-1.06l3.22-3.22H1.75A.75.75 0 0 1 1 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section What People Say-->
+    <section id="whatpeoplesay" class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">What People Say</h2>
+                <p class="text-muted">
+                    Intip pengalaman orang lain setelah pakai rekomendasi kami.
+                    Siapa tahu kamu relate!
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="d-flex flex-nowrap overflow-auto gap-4 pb-2" style="scrollbar-width: thin;">
+                        <!-- Card 1 -->
+                        <div class="card flex-shrink-0 border-0 shadow" style="min-width: 320px; max-width: 340px; background: #f7f7f7;">
+                            <div class="d-flex align-items-center p-3 pb-0">
+                                <div>
+                                    <div class="fw-semibold">Athar Dwiputra</div>
+                                    <div class="text-muted small">26 tahun</div>
+                                    <div class="mb-1">
+                                        <!-- Rating: 5 stars -->
+                                        <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-2">
+                                <p class="mb-0">
+                                    Gak nyangka ada platform yang bisa analisa kulit dari foto doang. Gue cowok yang baru banget mulai skincare-an, dan AmorCare bikin semuanya jadi gampang dipahami.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card flex-shrink-0 border-0 shadow" style="min-width: 320px; max-width: 340px; background: #f7f7f7;">
+                            <div class="d-flex align-items-center p-3 pb-0">
+                                <div>
+                                    <div class="fw-semibold">Fajrin Rahmayanti</div>
+                                    <div class="text-muted small">19 tahun</div>
+                                    <div class="mb-1">
+                                        <!-- Rating: 4 stars -->
+                                        <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;</span><span style="color: #E0E0E0;">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-2">
+                                <p class="mb-0">
+                                    Baru mulai tertarik sama skincare, tapi bingung harus pakai apa. AmorCare kasih rekomendasi yang gak bikin overthinking, tampilannya lucu dan gampang dipakai.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="card flex-shrink-0 border-0 shadow" style="min-width: 320px; max-width: 340px; background: #f7f7f7;">
+                            <div class="d-flex align-items-center p-3 pb-0">
+                                <div>
+                                    <div class="fw-semibold">Cahya Rosyidah</div>
+                                    <div class="text-muted small">29 tahun</div>
+                                    <div class="mb-1">
+                                        <!-- Rating: 5 stars -->
+                                        <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-2">
+                                <p class="mb-0">
+                                    Kalo pakai hijab, kulit gampang berminyak. Iseng coba Skin Check di AmorCare, aku baru sadar kulitku butuh perawatan khusus. Skincare yang disaranin juga ramah buat kulit sensitif.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="card flex-shrink-0 border-0 shadow" style="min-width: 320px; max-width: 340px; background: #f7f7f7;">
+                            <div class="d-flex align-items-center p-3 pb-0">
+                                <div>
+                                    <div class="fw-semibold">Fadhil Fariduddin</div>
+                                    <div class="text-muted small">20 tahun</div>
+                                    <div class="mb-1">
+                                        <!-- Rating: 4 stars -->
+                                        <span style="color: #FFD700;">&#9733;&#9733;&#9733;&#9733;</span><span style="color: #E0E0E0;">&#9733;</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body pt-2">
+                                <p class="mb-0">
+                                    Jujur, gua anak teknik yang ga punya waktu buat research skincare. AmorCare ngebantu banget.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section About Us-->
+    <section id="aboutus" class="py-5" style="background-color: #FFF4C0;">
+        <div class="container" style="max-width: 900px;">
+            <div class="text-center mb-4">
+            <h2 class="fw-bold">About Us</h2>
+            <p class="text-muted">Kenalan yuk sama AmorCare!</p>
+            </div>
+            <div class="row justify-content-center g-3 flex-column align-items-center">
+            <div class="col-auto d-flex flex-column align-items-center mb-2" style="width:100%; max-width:600px;">
+                <div class="card shadow-sm w-100 mb-3" style="background: #fff;">
+                <div class="card-body px-4 py-4">
+                    <h6 class="fw-semibold mb-3 text-center">Kenapa AmorCare dibuat?</h6>
+                    <p class="mb-0 text-center">
+                    AmorCare lahir dari keresahan banyak orang yang bingung cari skincare yang cocok. Kami di sini bantu kamu kenal lebih dalam dengan kulitmu sendiri.
+                    </p>
+                </div>
+                </div>
+                <div class="card shadow-sm w-100 mb-3" style="background: #fff;">
+                <div class="card-body px-4 py-4">
+                    <h6 class="fw-semibold mb-3 text-center">Apa yang membedakan AmorCare</h6>
+                    <p class="mb-0 text-center">
+                    Dengan teknologi AI, kamu cukup upload selfie dan kami bantu analisis jenis kulitmu. Habis itu, kamu langsung dapet rekomendasi produk skincare lokal atau bahan alami yang cocok. Simpel, personal, dan pastinya aman.
+                    </p>
+                </div>
+                </div>
+                <div class="card shadow-sm w-100" style="background: #fff;">
+                <div class="card-body px-4 py-4">
+                    <h6 class="fw-semibold mb-3 text-center">Tujuan Kami</h6>
+                    <p class="mb-0 text-center">
+                    Misi kami adalah membuat perawatan kulit lebih mudah diakses dan relevan untuk semua orang, tanpa harus bingung mulai dari mana.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <!-- Behind the Projects -->
+            <div class="mt-5">
+            <h3 class="fw-bold mb-4 text-center">Behind the Projects (LAI25-SM007)</h3>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-12">
+                <div class="card shadow-sm position-relative flex-row align-items-start" style="border-radius:16px;">
+                    <div class="card-body py-4 px-4 d-flex align-items-start w-100">
+                    <img src="static/img/profile1.jpeg" alt="Nama 1" class="rounded-circle flex-shrink-0" style="width:72px; height:72px; object-fit:cover; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    <div class="ms-4 flex-grow-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="fw-semibold" style="font-size:1.1rem;">Paskalis Dwiputra Palayukan (A206YAF390)</div>
+                            <a href="https://www.linkedin.com/in/paskalis-dwiputra-p-07514520b/" target="_blank" rel="noopener" style="color:#0A66C2; margin-left:12px;">
+                                <i class="bi bi-linkedin" style="font-size:1.5rem;"></i>
+                            </a>
+                        </div>
+                        <div style="font-size:0.98rem; color:#508D69;">Leader (Data Research)</div>
+                        <div class="d-flex align-items-center mb-1" style="font-size:0.95rem; color:#726C6E; margin-top:4px;">
+                        <i class="bi bi-mortarboard-fill me-2" style="color:#ff8f8f;"></i>
+                        Universitas Halu Oleo (Fresh Graduate)
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12">
+                <div class="card shadow-sm position-relative flex-row align-items-center" style="border-radius:16px;">
+                    <div class="card-body py-4 px-4 d-flex align-items-start w-100">
+                    <img src="static/img/profile2.png" alt="Nama 2" class="rounded-circle flex-shrink-0" style="width:72px; height:72px; object-fit:cover; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    <div class="ms-4 flex-grow-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="fw-semibold" style="font-size:1.1rem;">Muhammad Fariduddin Athar (A299YBM077)</div>
+                            <a href="https://www.instagram.com/farid.udin25/" target="_blank" rel="noopener" style="color:#E4405F; margin-left:12px;">
+                                <i class="bi bi-instagram" style="font-size:1.5rem;"></i>
+                            </a>
+                        </div>
+                        <div style="font-size:0.98rem; color:#508D69;">Co-Leader (Back-End)</div>
+                        <div class="d-flex align-items-center mb-1" style="font-size:0.95rem; color:#726C6E;  margin-top:4px;">
+                        <i class="bi bi-mortarboard-fill me-2" style="color:#ff8f8f;"></i>
+                        Universitas Pendidikan Indonesia
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12">
+                <div class="card shadow-sm position-relative flex-row align-items-center" style="border-radius:16px;">
+                    <div class="card-body py-4 px-4 d-flex align-items-start w-100">
+                    <img src="static/img/profile3.jpeg" alt="Nama 3" class="rounded-circle flex-shrink-0" style="width:72px; height:72px; object-fit:cover; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    <div class="ms-4 flex-grow-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="fw-semibold" style="font-size:1.1rem;">Fadhilah Nurrahmayanti (A117XBM150)</div>
+                            <a href="https://www.linkedin.com/in/fadhilaanr/" target="_blank" rel="noopener" style="color:#0A66C2; margin-left:12px;">
+                                <i class="bi bi-linkedin" style="font-size:1.5rem;"></i>
+                            </a>
+                        </div>
+                        <div style="font-size:0.98rem; color:#508D69;">UI/UX Design & Front-End</div>
+                        <div class="d-flex align-items-center mb-1" style="font-size:0.95rem; color:#726C6E; margin-top:4px;">
+                        <i class="bi bi-mortarboard-fill me-2" style="color:#ff8f8f;"></i>
+                        Institut Teknologi Nasional Bandung
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12">
+                <div class="card shadow-sm position-relative flex-row align-items-center" style="border-radius:16px;">
+                    <div class="card-body py-4 px-4 d-flex align-items-start w-100">
+                    <img src="static/img/profile4.jpeg" alt="Nama 4" class="rounded-circle flex-shrink-0" style="width:72px; height:72px; object-fit:cover; border:3px solid #fff; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+                    <div class="ms-4 flex-grow-1">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="fw-semibold" style="font-size:1.1rem;">Wahyuni Fajrin Rosyidah (A587XTM495)</div>
+                            <a href="https://www.linkedin.com/in/wahyuni-fajrin-rosyidah" target="_blank" rel="noopener" style="color:#0A66C2; margin-left:12px;">
+                                <i class="bi bi-linkedin" style="font-size:1.5rem;"></i>
+                            </a>
+                        </div>
+                        <div style="font-size:0.98rem; color:#508D69;">ML Model Training</div>
+                        <div class="d-flex align-items-center mb-1" style="font-size:0.95rem; color:#726C6E; margin-top:4px;">
+                        <i class="bi bi-mortarboard-fill me-2" style="color:#ff8f8f;"></i>
+                        Universitas Papua
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #508D69; color: #fff;">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-6 col-md-3 mb-3">
+                    <img src="static/img/Footer Logo.png" alt="AmorCare Logo" style="height:160px;">
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h4 class="fw-semibold mb-3" style="color:#fff;">Menu</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:#fff;">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#skincheck" class="nav-link p-0" style="color:#fff;">Skin Check</a></li>
+                        <li class="nav-item mb-2"><a href="#skinpicks" class="nav-link p-0" style="color:#fff;">Skin Picks</a></li>
+                        <li class="nav-item mb-2"><a href="#whatpeoplesay" class="nav-link p-0" style="color:#fff;">What People Say</a></li>
+                        <li class="nav-item mb-2"><a href="#aboutus" class="nav-link p-0" style="color:#fff;">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <h4 class="fw-semibold mb-3" style="color:#fff;">Contact Us</h4>
+                    <p class="mb-1" style="color:#fff;">
+                        Email: <a href="mailto:amorcareproject@email.com" style="color:#fff;">amorcareproject@email.com</a>
+                    </p>
+                    <p class="small mt-2 mb-0" style="color:#fff;">Hubungi kami untuk pertanyaan, saran, atau kerjasama seputar AmorCare.</p>
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-2 border-top" style="border-color:rgba(255,255,255,0.2)!important;">
+                    <p class="mb-0" style="color:#fff;">&copy; 2025 AmorCare by LAI25-SM007. Laskar AI 2025 Capstone Project. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="static/script.js"></script>
+    <script src="../assets/js/color-modes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
