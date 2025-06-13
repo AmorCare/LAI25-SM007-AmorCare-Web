@@ -6,9 +6,8 @@
 -  Responsif dan mudah digunakan di berbagai perangkat (mobile & desktop).
 - Hasil klasifikasi ditampilkan secara instan.
 
-## Cara Menjalankan (Local)
 
-### 1. Clone repositori ini
+## Clone repositori ini
 ```bash
 git clone https://github.com/AmorCare/LAI25-SM007-AmorCare-Web.git
 cd LAI25-SM007-AmorCare-Web
